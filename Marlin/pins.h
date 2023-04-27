@@ -747,7 +747,7 @@
     #endif
   #endif
 
-  #if MB(AZTEEG_X3_PRO)
+  #if MB(RAMPS_13_EFB) || MB(RAMPS_13_EFF) || MB(AZTEEG_X3_PRO)
     #define BEEPER 33
   #endif
 
