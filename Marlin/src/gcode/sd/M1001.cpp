@@ -83,6 +83,9 @@ void GcodeSuite::M1001() {
   // Stop the print job timer
   process_subcommands_now(F("M77"));
 
+  // Park the nozzle
+  process_subcommands_now(F("G27"));
+
   // Set the progress bar "done" state
   TERN_(LCD_SET_PROGRESS_MANUALLY, ui.set_progress_done());
 
